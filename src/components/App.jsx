@@ -39,7 +39,7 @@ export const App = () => {
     <div className={css.container}>
       <Section title="Please leave Feedback">
         <FeedbackOptions
-          options={["good", "neutral", "bad"]}
+          options={Object.keys({good,neutral, bad})}
           onLeaveFeedback={putReview}
         />
 
